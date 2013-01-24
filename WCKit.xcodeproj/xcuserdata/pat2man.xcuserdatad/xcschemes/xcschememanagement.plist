@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>WCNavigationController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+		<key>WCNavigationControllerExample.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>WCNavigationControllerExampleTests copy copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>WCNavigationControllerExampleTests copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>WCPhysicsAnimation.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CE51156916025FBE00BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE51157A16025FBE00BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE5115961602601900BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE5115C41602601900BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE5115DD1602604300BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE5115EF1602605000BD3A7A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE77FEFC16792371002B4511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE77FF0A16792371002B4511</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

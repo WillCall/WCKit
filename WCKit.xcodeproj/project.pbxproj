@@ -6,14 +6,470 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CE51156E16025FBE00BD3A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
+		CE51157316025FBE00BD3A7A /* WCNavigationController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE51157216025FBE00BD3A7A /* WCNavigationController.h */; };
+		CE51157516025FBE00BD3A7A /* WCNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE51157416025FBE00BD3A7A /* WCNavigationController.m */; };
+		CE51157D16025FBE00BD3A7A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51157C16025FBE00BD3A7A /* SenTestingKit.framework */; };
+		CE51157F16025FBE00BD3A7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51157E16025FBE00BD3A7A /* UIKit.framework */; };
+		CE51158016025FBE00BD3A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
+		CE51158316025FBE00BD3A7A /* libWCNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */; };
+		CE51158916025FBE00BD3A7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE51158716025FBE00BD3A7A /* InfoPlist.strings */; };
+		CE51158C16025FBE00BD3A7A /* WCNavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE51158B16025FBE00BD3A7A /* WCNavigationControllerTests.m */; };
+		CE5115991602601900BD3A7A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51157E16025FBE00BD3A7A /* UIKit.framework */; };
+		CE51159A1602601900BD3A7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
+		CE51159C1602601900BD3A7A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51159B1602601900BD3A7A /* CoreGraphics.framework */; };
+		CE51159E1602601900BD3A7A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51159D1602601900BD3A7A /* CoreData.framework */; };
+		CE5115A41602601900BD3A7A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE5115A21602601900BD3A7A /* InfoPlist.strings */; };
+		CE5115A61602601900BD3A7A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5115A51602601900BD3A7A /* main.m */; };
+		CE5115AA1602601900BD3A7A /* WCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5115A91602601900BD3A7A /* WCAppDelegate.m */; };
+		CE5115AC1602601900BD3A7A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5115AB1602601900BD3A7A /* Default.png */; };
+		CE5115AE1602601900BD3A7A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5115AD1602601900BD3A7A /* Default@2x.png */; };
+		CE5115B01602601900BD3A7A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE5115AF1602601900BD3A7A /* Default-568h@2x.png */; };
+		CE5115B31602601900BD3A7A /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5115B11602601900BD3A7A /* MainStoryboard_iPhone.storyboard */; };
+		CE5115B61602601900BD3A7A /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE5115B41602601900BD3A7A /* MainStoryboard_iPad.storyboard */; };
+		CE5115B91602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE5115B71602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld */; };
+		CE5115BC1602601900BD3A7A /* WCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5115BB1602601900BD3A7A /* WCMasterViewController.m */; };
+		CE5115BF1602601900BD3A7A /* WCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5115BE1602601900BD3A7A /* WCDetailViewController.m */; };
+		CE5115FF1602632A00BD3A7A /* libWCNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */; };
+		CE5116031602713800BD3A7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5116021602713800BD3A7A /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */; };
+		CE77FEFE16792371002B4511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
+		CE77FF0316792371002B4511 /* WCPhysicsViewAnimation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE77FF0216792371002B4511 /* WCPhysicsViewAnimation.h */; };
+		CE77FF0516792371002B4511 /* WCPhysicsViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF0416792371002B4511 /* WCPhysicsViewAnimation.m */; };
+		CE77FF0C16792371002B4511 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51157C16025FBE00BD3A7A /* SenTestingKit.framework */; };
+		CE77FF0D16792371002B4511 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51157E16025FBE00BD3A7A /* UIKit.framework */; };
+		CE77FF0E16792371002B4511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
+		CE77FF1116792371002B4511 /* libWCPhysicsAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */; };
+		CE77FF1716792371002B4511 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE77FF1516792371002B4511 /* InfoPlist.strings */; };
+		CE77FF1A16792371002B4511 /* WCPhysicsAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF1916792371002B4511 /* WCPhysicsAnimationTests.m */; };
+		CE77FF4C16794E92002B4511 /* baby_elephant_ears.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CE77FF4B16794E92002B4511 /* baby_elephant_ears.jpg */; };
+		CE77FF4F1679510B002B4511 /* libWCPhysicsAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */; };
+		CE77FF68167A570B002B4511 /* WCPhysicsSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */; };
+		CE77FF6D167A572A002B4511 /* WCPhysicsSimulationBody.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */; };
+		CE7E1BC91632195B0000682B /* WCNavigationBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */; };
+		CEEB937E1603E4F800AFE51E /* WCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */; };
+		CEEB937F1603E4F800AFE51E /* WCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */; };
+		D2E682BE0E504187AAFBE49E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F86C222780454B84A0E57A17 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE51158116025FBE00BD3A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE51155E16025F8600BD3A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE51156916025FBE00BD3A7A;
+			remoteInfo = WCNavigationController;
+		};
+		CE5115DB1602602D00BD3A7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE51155E16025F8600BD3A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE51156916025FBE00BD3A7A;
+			remoteInfo = WCNavigationController;
+		};
+		CE77FF0F16792371002B4511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE51155E16025F8600BD3A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE77FEFC16792371002B4511;
+			remoteInfo = WCPhysicsAnimation;
+		};
+		CE77FF4D16795059002B4511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE51155E16025F8600BD3A7A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE77FEFC16792371002B4511;
+			remoteInfo = WCPhysicsAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE51156816025FBE00BD3A7A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CE7E1BC91632195B0000682B /* WCNavigationBar.h in CopyFiles */,
+				CE51157316025FBE00BD3A7A /* WCNavigationController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FEFB16792371002B4511 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				CE77FF0316792371002B4511 /* WCPhysicsViewAnimation.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		629EBBF184314CA08B5453F9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCNavigationController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51156D16025FBE00BD3A7A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE51157116025FBE00BD3A7A /* WCNavigationController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCNavigationController-Prefix.pch"; sourceTree = "<group>"; };
+		CE51157216025FBE00BD3A7A /* WCNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCNavigationController.h; sourceTree = "<group>"; };
+		CE51157416025FBE00BD3A7A /* WCNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCNavigationController.m; sourceTree = "<group>"; };
+		CE51157B16025FBE00BD3A7A /* WCNavigationControllerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCNavigationControllerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51157C16025FBE00BD3A7A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE51157E16025FBE00BD3A7A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE51158616025FBE00BD3A7A /* WCNavigationControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WCNavigationControllerTests-Info.plist"; sourceTree = "<group>"; };
+		CE51158816025FBE00BD3A7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE51158A16025FBE00BD3A7A /* WCNavigationControllerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCNavigationControllerTests.h; sourceTree = "<group>"; };
+		CE51158B16025FBE00BD3A7A /* WCNavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCNavigationControllerTests.m; sourceTree = "<group>"; };
+		CE5115971602601900BD3A7A /* WCNavigationControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WCNavigationControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE51159B1602601900BD3A7A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CE51159D1602601900BD3A7A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE5115A11602601900BD3A7A /* WCNavigationControllerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WCNavigationControllerExample-Info.plist"; sourceTree = "<group>"; };
+		CE5115A31602601900BD3A7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE5115A51602601900BD3A7A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE5115A71602601900BD3A7A /* WCNavigationControllerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCNavigationControllerExample-Prefix.pch"; sourceTree = "<group>"; };
+		CE5115A81602601900BD3A7A /* WCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCAppDelegate.h; sourceTree = "<group>"; };
+		CE5115A91602601900BD3A7A /* WCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCAppDelegate.m; sourceTree = "<group>"; };
+		CE5115AB1602601900BD3A7A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CE5115AD1602601900BD3A7A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CE5115AF1602601900BD3A7A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CE5115B21602601900BD3A7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CE5115B51602601900BD3A7A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CE5115B81602601900BD3A7A /* WCNavigationControllerExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WCNavigationControllerExample.xcdatamodel; sourceTree = "<group>"; };
+		CE5115BA1602601900BD3A7A /* WCMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCMasterViewController.h; sourceTree = "<group>"; };
+		CE5115BB1602601900BD3A7A /* WCMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCMasterViewController.m; sourceTree = "<group>"; };
+		CE5115BD1602601900BD3A7A /* WCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDetailViewController.h; sourceTree = "<group>"; };
+		CE5115BE1602601900BD3A7A /* WCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCDetailViewController.m; sourceTree = "<group>"; };
+		CE5116021602713800BD3A7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Physics.h"; sourceTree = "<group>"; };
+		CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Physics.m"; sourceTree = "<group>"; };
+		CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCPhysicsAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE77FF0116792371002B4511 /* WCPhysicsAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WCPhysicsAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		CE77FF0216792371002B4511 /* WCPhysicsViewAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPhysicsViewAnimation.h; sourceTree = "<group>"; };
+		CE77FF0416792371002B4511 /* WCPhysicsViewAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsViewAnimation.m; sourceTree = "<group>"; };
+		CE77FF0B16792371002B4511 /* WCPhysicsAnimationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WCPhysicsAnimationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE77FF1416792371002B4511 /* WCPhysicsAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WCPhysicsAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		CE77FF1616792371002B4511 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE77FF1816792371002B4511 /* WCPhysicsAnimationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCPhysicsAnimationTests.h; sourceTree = "<group>"; };
+		CE77FF1916792371002B4511 /* WCPhysicsAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsAnimationTests.m; sourceTree = "<group>"; };
+		CE77FF4B16794E92002B4511 /* baby_elephant_ears.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = baby_elephant_ears.jpg; sourceTree = "<group>"; };
+		CE77FF66167A570B002B4511 /* WCPhysicsSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhysicsSimulation.h; sourceTree = "<group>"; };
+		CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsSimulation.m; sourceTree = "<group>"; };
+		CE77FF6B167A572A002B4511 /* WCPhysicsSimulationBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhysicsSimulationBody.h; sourceTree = "<group>"; };
+		CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsSimulationBody.m; sourceTree = "<group>"; };
+		CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNavigationBar.h; sourceTree = "<group>"; };
+		CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNavigationBar.m; sourceTree = "<group>"; };
+		F86C222780454B84A0E57A17 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE51156716025FBE00BD3A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51156E16025FBE00BD3A7A /* Foundation.framework in Frameworks */,
+				D2E682BE0E504187AAFBE49E /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE51157716025FBE00BD3A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51157D16025FBE00BD3A7A /* SenTestingKit.framework in Frameworks */,
+				CE51157F16025FBE00BD3A7A /* UIKit.framework in Frameworks */,
+				CE51158016025FBE00BD3A7A /* Foundation.framework in Frameworks */,
+				CE51158316025FBE00BD3A7A /* libWCNavigationController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5115941602601900BD3A7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FF4F1679510B002B4511 /* libWCPhysicsAnimation.a in Frameworks */,
+				CE5116031602713800BD3A7A /* QuartzCore.framework in Frameworks */,
+				CE5115FF1602632A00BD3A7A /* libWCNavigationController.a in Frameworks */,
+				CE5115991602601900BD3A7A /* UIKit.framework in Frameworks */,
+				CE51159A1602601900BD3A7A /* Foundation.framework in Frameworks */,
+				CE51159C1602601900BD3A7A /* CoreGraphics.framework in Frameworks */,
+				CE51159E1602601900BD3A7A /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FEFA16792371002B4511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FEFE16792371002B4511 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FF0716792371002B4511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FF0C16792371002B4511 /* SenTestingKit.framework in Frameworks */,
+				CE77FF0D16792371002B4511 /* UIKit.framework in Frameworks */,
+				CE77FF0E16792371002B4511 /* Foundation.framework in Frameworks */,
+				CE77FF1116792371002B4511 /* libWCPhysicsAnimation.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		CE51155C16025F8600BD3A7A = {
 			isa = PBXGroup;
 			children = (
+				CE51156F16025FBE00BD3A7A /* WCNavigationController */,
+				CE51158416025FBE00BD3A7A /* WCNavigationControllerTests */,
+				CE51159F1602601900BD3A7A /* WCNavigationControllerExample */,
+				CE77FEFF16792371002B4511 /* WCPhysicsAnimation */,
+				CE77FF1216792371002B4511 /* WCPhysicsAnimationTests */,
+				CE51156C16025FBE00BD3A7A /* Frameworks */,
+				CE51156B16025FBE00BD3A7A /* Products */,
+				629EBBF184314CA08B5453F9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
+		CE51156B16025FBE00BD3A7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */,
+				CE51157B16025FBE00BD3A7A /* WCNavigationControllerTests.octest */,
+				CE5115971602601900BD3A7A /* WCNavigationControllerExample.app */,
+				CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */,
+				CE77FF0B16792371002B4511 /* WCPhysicsAnimationTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE51156C16025FBE00BD3A7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE5116021602713800BD3A7A /* QuartzCore.framework */,
+				CE51156D16025FBE00BD3A7A /* Foundation.framework */,
+				CE51157C16025FBE00BD3A7A /* SenTestingKit.framework */,
+				CE51157E16025FBE00BD3A7A /* UIKit.framework */,
+				CE51159B1602601900BD3A7A /* CoreGraphics.framework */,
+				CE51159D1602601900BD3A7A /* CoreData.framework */,
+				F86C222780454B84A0E57A17 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE51156F16025FBE00BD3A7A /* WCNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				CE51157016025FBE00BD3A7A /* Supporting Files */,
+				CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */,
+				CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */,
+				CE51157216025FBE00BD3A7A /* WCNavigationController.h */,
+				CE51157416025FBE00BD3A7A /* WCNavigationController.m */,
+			);
+			path = WCNavigationController;
+			sourceTree = "<group>";
+		};
+		CE51157016025FBE00BD3A7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE51157116025FBE00BD3A7A /* WCNavigationController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE51158416025FBE00BD3A7A /* WCNavigationControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE51158A16025FBE00BD3A7A /* WCNavigationControllerTests.h */,
+				CE51158B16025FBE00BD3A7A /* WCNavigationControllerTests.m */,
+				CE51158516025FBE00BD3A7A /* Supporting Files */,
+			);
+			path = WCNavigationControllerTests;
+			sourceTree = "<group>";
+		};
+		CE51158516025FBE00BD3A7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE51158616025FBE00BD3A7A /* WCNavigationControllerTests-Info.plist */,
+				CE51158716025FBE00BD3A7A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE51159F1602601900BD3A7A /* WCNavigationControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				CE77FF4B16794E92002B4511 /* baby_elephant_ears.jpg */,
+				CE5115A81602601900BD3A7A /* WCAppDelegate.h */,
+				CE5115A91602601900BD3A7A /* WCAppDelegate.m */,
+				CE5115B11602601900BD3A7A /* MainStoryboard_iPhone.storyboard */,
+				CE5115B41602601900BD3A7A /* MainStoryboard_iPad.storyboard */,
+				CE5115BA1602601900BD3A7A /* WCMasterViewController.h */,
+				CE5115BB1602601900BD3A7A /* WCMasterViewController.m */,
+				CE5115BD1602601900BD3A7A /* WCDetailViewController.h */,
+				CE5115BE1602601900BD3A7A /* WCDetailViewController.m */,
+				CE5115B71602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld */,
+				CE5115A01602601900BD3A7A /* Supporting Files */,
+			);
+			path = WCNavigationControllerExample;
+			sourceTree = "<group>";
+		};
+		CE5115A01602601900BD3A7A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE5115A11602601900BD3A7A /* WCNavigationControllerExample-Info.plist */,
+				CE5115A21602601900BD3A7A /* InfoPlist.strings */,
+				CE5115A51602601900BD3A7A /* main.m */,
+				CE5115A71602601900BD3A7A /* WCNavigationControllerExample-Prefix.pch */,
+				CE5115AB1602601900BD3A7A /* Default.png */,
+				CE5115AD1602601900BD3A7A /* Default@2x.png */,
+				CE5115AF1602601900BD3A7A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE77FEFF16792371002B4511 /* WCPhysicsAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				CE77FF0016792371002B4511 /* Supporting Files */,
+				CE77FF66167A570B002B4511 /* WCPhysicsSimulation.h */,
+				CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */,
+				CE77FF6B167A572A002B4511 /* WCPhysicsSimulationBody.h */,
+				CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */,
+				CE77FF0216792371002B4511 /* WCPhysicsViewAnimation.h */,
+				CE77FF0416792371002B4511 /* WCPhysicsViewAnimation.m */,
+				CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */,
+				CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */,
+			);
+			path = WCPhysicsAnimation;
+			sourceTree = "<group>";
+		};
+		CE77FF0016792371002B4511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE77FF0116792371002B4511 /* WCPhysicsAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE77FF1216792371002B4511 /* WCPhysicsAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE77FF1816792371002B4511 /* WCPhysicsAnimationTests.h */,
+				CE77FF1916792371002B4511 /* WCPhysicsAnimationTests.m */,
+				CE77FF1316792371002B4511 /* Supporting Files */,
+			);
+			path = WCPhysicsAnimationTests;
+			sourceTree = "<group>";
+		};
+		CE77FF1316792371002B4511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE77FF1416792371002B4511 /* WCPhysicsAnimationTests-Info.plist */,
+				CE77FF1516792371002B4511 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE51156916025FBE00BD3A7A /* WCNavigationController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE51158D16025FBE00BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationController" */;
+			buildPhases = (
+				CE51156616025FBE00BD3A7A /* Sources */,
+				CE51156716025FBE00BD3A7A /* Frameworks */,
+				CE51156816025FBE00BD3A7A /* CopyFiles */,
+				EFB87F4A94E04431889A31BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCNavigationController;
+			productName = WCNavigationController;
+			productReference = CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE51157A16025FBE00BD3A7A /* WCNavigationControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE51159016025FBE00BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationControllerTests" */;
+			buildPhases = (
+				CE51157616025FBE00BD3A7A /* Sources */,
+				CE51157716025FBE00BD3A7A /* Frameworks */,
+				CE51157816025FBE00BD3A7A /* Resources */,
+				CE51157916025FBE00BD3A7A /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE51158216025FBE00BD3A7A /* PBXTargetDependency */,
+			);
+			name = WCNavigationControllerTests;
+			productName = WCNavigationControllerTests;
+			productReference = CE51157B16025FBE00BD3A7A /* WCNavigationControllerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		CE5115961602601900BD3A7A /* WCNavigationControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE5115D51602601900BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationControllerExample" */;
+			buildPhases = (
+				CE5115931602601900BD3A7A /* Sources */,
+				CE5115941602601900BD3A7A /* Frameworks */,
+				CE5115951602601900BD3A7A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE77FF4E16795059002B4511 /* PBXTargetDependency */,
+				CE5115DC1602602D00BD3A7A /* PBXTargetDependency */,
+			);
+			name = WCNavigationControllerExample;
+			productName = WCNavigationControllerExample;
+			productReference = CE5115971602601900BD3A7A /* WCNavigationControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE77FEFC16792371002B4511 /* WCPhysicsAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE77FF1F16792371002B4511 /* Build configuration list for PBXNativeTarget "WCPhysicsAnimation" */;
+			buildPhases = (
+				CE77FEF916792371002B4511 /* Sources */,
+				CE77FEFA16792371002B4511 /* Frameworks */,
+				CE77FEFB16792371002B4511 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WCPhysicsAnimation;
+			productName = WCPhysicsAnimation;
+			productReference = CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE77FF0A16792371002B4511 /* WCPhysicsAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE77FF2016792371002B4511 /* Build configuration list for PBXNativeTarget "WCPhysicsAnimationTests" */;
+			buildPhases = (
+				CE77FF0616792371002B4511 /* Sources */,
+				CE77FF0716792371002B4511 /* Frameworks */,
+				CE77FF0816792371002B4511 /* Resources */,
+				CE77FF0916792371002B4511 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE77FF1016792371002B4511 /* PBXTargetDependency */,
+			);
+			name = WCPhysicsAnimationTests;
+			productName = WCPhysicsAnimationTests;
+			productReference = CE77FF0B16792371002B4511 /* WCPhysicsAnimationTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE51155E16025F8600BD3A7A /* Project object */ = {
@@ -29,23 +485,551 @@
 				en,
 			);
 			mainGroup = CE51155C16025F8600BD3A7A;
+			productRefGroup = CE51156B16025FBE00BD3A7A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				CE51156916025FBE00BD3A7A /* WCNavigationController */,
+				CE51157A16025FBE00BD3A7A /* WCNavigationControllerTests */,
+				CE5115961602601900BD3A7A /* WCNavigationControllerExample */,
+				CE77FEFC16792371002B4511 /* WCPhysicsAnimation */,
+				CE77FF0A16792371002B4511 /* WCPhysicsAnimationTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE51157816025FBE00BD3A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51158916025FBE00BD3A7A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5115951602601900BD3A7A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5115A41602601900BD3A7A /* InfoPlist.strings in Resources */,
+				CE5115AC1602601900BD3A7A /* Default.png in Resources */,
+				CE5115AE1602601900BD3A7A /* Default@2x.png in Resources */,
+				CE5115B01602601900BD3A7A /* Default-568h@2x.png in Resources */,
+				CE5115B31602601900BD3A7A /* MainStoryboard_iPhone.storyboard in Resources */,
+				CE5115B61602601900BD3A7A /* MainStoryboard_iPad.storyboard in Resources */,
+				CE77FF4C16794E92002B4511 /* baby_elephant_ears.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FF0816792371002B4511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FF1716792371002B4511 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE51157916025FBE00BD3A7A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		CE77FF0916792371002B4511 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		EFB87F4A94E04431889A31BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE51156616025FBE00BD3A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51157516025FBE00BD3A7A /* WCNavigationController.m in Sources */,
+				CEEB937E1603E4F800AFE51E /* WCNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE51157616025FBE00BD3A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE51158C16025FBE00BD3A7A /* WCNavigationControllerTests.m in Sources */,
+				CEEB937F1603E4F800AFE51E /* WCNavigationBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5115931602601900BD3A7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE5115A61602601900BD3A7A /* main.m in Sources */,
+				CE5115AA1602601900BD3A7A /* WCAppDelegate.m in Sources */,
+				CE5115B91602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld in Sources */,
+				CE5115BC1602601900BD3A7A /* WCMasterViewController.m in Sources */,
+				CE5115BF1602601900BD3A7A /* WCDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FEF916792371002B4511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FF0516792371002B4511 /* WCPhysicsViewAnimation.m in Sources */,
+				CE77FF68167A570B002B4511 /* WCPhysicsSimulation.m in Sources */,
+				CE77FF6D167A572A002B4511 /* WCPhysicsSimulationBody.m in Sources */,
+				CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE77FF0616792371002B4511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE77FF1A16792371002B4511 /* WCPhysicsAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE51158216025FBE00BD3A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE51156916025FBE00BD3A7A /* WCNavigationController */;
+			targetProxy = CE51158116025FBE00BD3A7A /* PBXContainerItemProxy */;
+		};
+		CE5115DC1602602D00BD3A7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE51156916025FBE00BD3A7A /* WCNavigationController */;
+			targetProxy = CE5115DB1602602D00BD3A7A /* PBXContainerItemProxy */;
+		};
+		CE77FF1016792371002B4511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE77FEFC16792371002B4511 /* WCPhysicsAnimation */;
+			targetProxy = CE77FF0F16792371002B4511 /* PBXContainerItemProxy */;
+		};
+		CE77FF4E16795059002B4511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE77FEFC16792371002B4511 /* WCPhysicsAnimation */;
+			targetProxy = CE77FF4D16795059002B4511 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE51158716025FBE00BD3A7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE51158816025FBE00BD3A7A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE5115A21602601900BD3A7A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5115A31602601900BD3A7A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE5115B11602601900BD3A7A /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5115B21602601900BD3A7A /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CE5115B41602601900BD3A7A /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE5115B51602601900BD3A7A /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CE77FF1516792371002B4511 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE77FF1616792371002B4511 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE51156316025F8600BD3A7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 			};
 			name = Debug;
 		};
 		CE51156416025F8600BD3A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+			};
+			name = Release;
+		};
+		CE51158E16025FBE00BD3A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629EBBF184314CA08B5453F9 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/WCNavigationController.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationController/WCNavigationController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE51158F16025FBE00BD3A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629EBBF184314CA08B5453F9 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/WCNavigationController.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationController/WCNavigationController-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE51159116025FBE00BD3A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationController/WCNavigationController-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WCNavigationControllerTests/WCNavigationControllerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE51159216025FBE00BD3A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationController/WCNavigationController-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WCNavigationControllerTests/WCNavigationControllerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		CE5115D61602601900BD3A7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationControllerExample/WCNavigationControllerExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/../UninstalledProducts/include";
+				INFOPLIST_FILE = "WCNavigationControllerExample/WCNavigationControllerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE5115D71602601900BD3A7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCNavigationControllerExample/WCNavigationControllerExample-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_TEMP_DIR)/../UninstalledProducts/include";
+				INFOPLIST_FILE = "WCNavigationControllerExample/WCNavigationControllerExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE77FF1B16792371002B4511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629EBBF184314CA08B5453F9 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/WCPhysicsAnimation.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCPhysicsAnimation/WCPhysicsAnimation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE77FF1C16792371002B4511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 629EBBF184314CA08B5453F9 /* Pods.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/WCPhysicsAnimation.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCPhysicsAnimation/WCPhysicsAnimation-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE77FF1D16792371002B4511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCPhysicsAnimation/WCPhysicsAnimation-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WCPhysicsAnimationTests/WCPhysicsAnimationTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE77FF1E16792371002B4511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WCPhysicsAnimation/WCPhysicsAnimation-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "WCPhysicsAnimationTests/WCPhysicsAnimationTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -61,7 +1045,65 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		CE51158D16025FBE00BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE51158E16025FBE00BD3A7A /* Debug */,
+				CE51158F16025FBE00BD3A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE51159016025FBE00BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE51159116025FBE00BD3A7A /* Debug */,
+				CE51159216025FBE00BD3A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE5115D51602601900BD3A7A /* Build configuration list for PBXNativeTarget "WCNavigationControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5115D61602601900BD3A7A /* Debug */,
+				CE5115D71602601900BD3A7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE77FF1F16792371002B4511 /* Build configuration list for PBXNativeTarget "WCPhysicsAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE77FF1B16792371002B4511 /* Debug */,
+				CE77FF1C16792371002B4511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE77FF2016792371002B4511 /* Build configuration list for PBXNativeTarget "WCPhysicsAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE77FF1D16792371002B4511 /* Debug */,
+				CE77FF1E16792371002B4511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE5115B71602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE5115B81602601900BD3A7A /* WCNavigationControllerExample.xcdatamodel */,
+			);
+			currentVersion = CE5115B81602601900BD3A7A /* WCNavigationControllerExample.xcdatamodel */;
+			path = WCNavigationControllerExample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CE51155E16025F8600BD3A7A /* Project object */;
 }
