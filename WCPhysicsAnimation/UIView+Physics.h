@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+
+
 @interface UIView (Physics) <UIGestureRecognizerDelegate>
 
 @property (nonatomic) CGRect originalFrame;
@@ -16,6 +18,11 @@
 - (void)snapToFrame:(CGRect)newFrame;
 - (void)snapToOriginalFrame;
 - (void)snapToAlternateFrame;
+
+- (void)snapToFrame:(CGRect)newFrame completion:(void (^)())completion;
+- (void)snapToOriginalFrameWithCompletion:(void (^)())completion;
+- (void)snapToAlternateFrameWithCompletion:(void (^)())completion;
+
 
 - (IBAction)viewMoved:(UIPanGestureRecognizer*)gesture;
 - (IBAction)viewScaled:(UIPinchGestureRecognizer*)gesture;
