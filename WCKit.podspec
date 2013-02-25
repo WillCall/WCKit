@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         		= "WCKit"
-  s.version      		= "0.0.1"
+  s.version      		= "0.0.2"
   s.platform 			= :ios, '5.0'
   s.summary      		= "Physics engine for WillCall."
   s.homepage     		= "http://www.getwillcall.com"
