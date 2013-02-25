@@ -7,8 +7,7 @@ Pod::Spec.new do |s|
   s.license      		= { :type => 'PRIVATE' }
   s.author       		= { "pat2man" => "pat2man@gmail.com" }
   s.source       		= { :git => "git@github.com:WillCall/WCKit.git", :branch => 'master' }
-  s.source_files 		= 'WCPhysics'
-  s.public_header_files 	= 'WCPhysics/*.h'
+  s.source_files 		= 'WCPhysicsAnimation', 'WCNavigationController'
   s.frameworks  		= 'Foundation', 'UIKit', 'QuartzCore'
   s.dependency 			'Chipmunk-Physics', :git => 'git@github.com:pat2man/Chipmunk-Physics.git'
 end
