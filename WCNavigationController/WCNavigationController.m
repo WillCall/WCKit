@@ -14,7 +14,6 @@
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     if (animated) {
         if (self.pushAnimationBlock) {
-            [self.navigationBar pushNavigationItem:viewController.navigationItem animated:TRUE];
             self.pushAnimationBlock(self.topViewController, viewController, ^(BOOL finished){
                 [super pushViewController:viewController animated:FALSE];
             });
