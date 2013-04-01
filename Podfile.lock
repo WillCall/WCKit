@@ -1,20 +1,14 @@
-
 PODS:
-- CMTraerPhysics (0.0.1)
-- Chipmunk-Physics (6.1.1)
+  - Chipmunk-Physics (6.1.1)
 
 DEPENDENCIES:
-- CMTraerPhysics (from `https://github.com/pat2man/CMTraerPhysics.git')
-- Chipmunk-Physics (from `https://github.com/pat2man/Chipmunk-Physics.git')
+  - Chipmunk-Physics (from `https://github.com/pat2man/Chipmunk-Physics.git`)
 
 EXTERNAL SOURCES:
-  CMTraerPhysics:
-    :git: https://github.com/pat2man/CMTraerPhysics.git
   Chipmunk-Physics:
     :git: https://github.com/pat2man/Chipmunk-Physics.git
 
 SPEC CHECKSUMS:
-  CMTraerPhysics: eb894b8374bf04d39751b4e1fece99eff85fc080
   Chipmunk-Physics: 6fb03d56169ba54271ae020cc4a93a927e45a1ed
 
-COCOAPODS: 0.16.1
+COCOAPODS: 0.17.1
