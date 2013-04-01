@@ -81,7 +81,7 @@ static int defaultDamping     = 16;
     if (_simulation) {
         return _simulation;
     }
-    
+
     CGRect origin = self.fromValue;
     CGRect destination = self.toValue;
 

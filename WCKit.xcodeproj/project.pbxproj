@@ -48,6 +48,7 @@
 		CE77FF68167A570B002B4511 /* WCPhysicsSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */; };
 		CE77FF6D167A572A002B4511 /* WCPhysicsSimulationBody.m in Sources */ = {isa = PBXBuildFile; fileRef = CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */; };
 		CE7E1BC91632195B0000682B /* WCNavigationBar.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */; };
+		CEE9B2BD17093131003C6C4D /* WCScrollViewAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE9B2BC17093131003C6C4D /* WCScrollViewAnimation.m */; };
 		CEEB937E1603E4F800AFE51E /* WCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */; };
 		CEEB937F1603E4F800AFE51E /* WCNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */; };
 		D2E682BE0E504187AAFBE49E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F86C222780454B84A0E57A17 /* libPods.a */; };
@@ -158,6 +159,8 @@
 		CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsSimulation.m; sourceTree = "<group>"; };
 		CE77FF6B167A572A002B4511 /* WCPhysicsSimulationBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCPhysicsSimulationBody.h; sourceTree = "<group>"; };
 		CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCPhysicsSimulationBody.m; sourceTree = "<group>"; };
+		CEE9B2BB17093131003C6C4D /* WCScrollViewAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCScrollViewAnimation.h; sourceTree = "<group>"; };
+		CEE9B2BC17093131003C6C4D /* WCScrollViewAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCScrollViewAnimation.m; sourceTree = "<group>"; };
 		CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCNavigationBar.h; sourceTree = "<group>"; };
 		CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCNavigationBar.m; sourceTree = "<group>"; };
 		F86C222780454B84A0E57A17 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -341,6 +344,8 @@
 				CE77FF6C167A572A002B4511 /* WCPhysicsSimulationBody.m */,
 				CE77FF0216792371002B4511 /* WCPhysicsViewAnimation.h */,
 				CE77FF0416792371002B4511 /* WCPhysicsViewAnimation.m */,
+				CEE9B2BB17093131003C6C4D /* WCScrollViewAnimation.h */,
+				CEE9B2BC17093131003C6C4D /* WCScrollViewAnimation.m */,
 				CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */,
 				CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */,
 			);
@@ -613,6 +618,7 @@
 				CE77FF68167A570B002B4511 /* WCPhysicsSimulation.m in Sources */,
 				CE77FF6D167A572A002B4511 /* WCPhysicsSimulationBody.m in Sources */,
 				CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */,
+				CEE9B2BD17093131003C6C4D /* WCScrollViewAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
