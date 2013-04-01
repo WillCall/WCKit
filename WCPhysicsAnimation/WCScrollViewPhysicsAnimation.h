@@ -9,11 +9,11 @@
 #import <QuartzCore/QuartzCore.h>
 #import "WCPhysicsSimulation.h"
 
-@interface WCScrollViewAnimation : CAKeyframeAnimation
+@interface WCScrollViewPhysicsAnimation : CAKeyframeAnimation
 
 @property (strong, nonatomic) WCPhysicsSimulation *simulation;
-@property (nonatomic) CGPoint fromValue;
-@property (nonatomic) CGPoint toValue;
+@property (nonatomic) CGRect fromValue;
+@property (nonatomic) CGRect toValue;
 
 @property (nonatomic, strong) NSNumber *stiffness;
 @property (nonatomic, strong) NSNumber *mass;

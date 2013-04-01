@@ -87,8 +87,8 @@ static int defaultDamping     = 16;
 
     WCPhysicsSimulationBody *centerBody = [[WCPhysicsSimulationBody alloc] init];
     centerBody.name = @"position";
-    centerBody.origin = [NSValue valueWithCGPoint:centerOfRect(origin)];
-    centerBody.destination = [NSValue valueWithCGPoint: centerOfRect(destination)];
+    centerBody.origin = [NSValue valueWithCGPoint:CGPointMake(CGRectGetMidX(origin), CGRectGetMidY(origin))];
+    centerBody.destination = [NSValue valueWithCGPoint: CGPointMake(CGRectGetMidX(destination), CGRectGetMidY(destination))];
     centerBody.stiffness = self.stiffness;
     centerBody.damping = self.damping;
     centerBody.mass = self.mass;
@@ -146,11 +146,6 @@ static int defaultDamping     = 16;
 
 - (NSArray*)animations {
     return @[self.sizeAnimation, self.positionAnimation];
-}
-
-#pragma mark - Utilities
-CGPoint centerOfRect(CGRect rect) {
-    return CGPointMake(rect.origin.x + (rect.size.width / 2), rect.origin.y + (rect.size.height / 2));
 }
 
 

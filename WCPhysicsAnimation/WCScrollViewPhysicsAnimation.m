@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "WCScrollViewAnimation.h"
+#import "WCScrollViewPhysicsAnimation.h"
 #import "WCPhysicsSimulationBody.h"
 
 static float defaultMass      = 0.5f;
 static int defaultStiffness   = 300;
 static int defaultDamping     = 16;
 
-@implementation WCScrollViewAnimation
+@implementation WCScrollViewPhysicsAnimation
 
 - (id)init {
     self = [super init];
@@ -27,7 +27,7 @@ static int defaultDamping     = 16;
 }
 
 - (id)copyWithZone:(NSZone *)zone {
-    WCScrollViewAnimation *copy = [[[self class] allocWithZone:zone] init];
+    WCScrollViewPhysicsAnimation *copy = [[[self class] allocWithZone:zone] init];
     copy.fromValue = self.fromValue;
     copy.toValue = self.toValue;
     copy.mass = self.mass;
@@ -52,11 +52,12 @@ static int defaultDamping     = 16;
         return _simulation;
     }
 
-    CGPoint origin = self.fromValue;
-    CGPoint destination = self.toValue;
+    CGPoint origin = CGPointMake(CGRectGetMidX(self.fromValue), CGRectGetMidY(self.fromValue));
+    CGPoint destination = CGPointMake(CGRectGetMidX(self.toValue), CGRectGetMidY(self.toValue));
+
 
     WCPhysicsSimulationBody *contentOffsetBody = [[WCPhysicsSimulationBody alloc] init];
-    contentOffsetBody.name = @"contentOffset";
+    contentOffsetBody.name = @"bounds";
     contentOffsetBody.origin = [NSValue valueWithCGPoint:origin];
     contentOffsetBody.destination = [NSValue valueWithCGPoint: destination];
     contentOffsetBody.stiffness = self.stiffness;
@@ -74,5 +75,6 @@ static int defaultDamping     = 16;
 - (NSArray*)values {
     return [self.simulation.animationValues valueForKeyPath:@"@unionOfObjects.contentOffset"];
 }
+
 
 @end

@@ -42,9 +42,9 @@
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (WCDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     __block WCMasterViewController *masterViewController = self;
-
+    
     [(WCNavigationController*)self.navigationController setPushAnimationBlock:^(UIViewController *sourceViewController, UIViewController *destinationViewController, WCViewControllerAnimationCompletionBlock completionBlock){
-        self.navigationController.view.userInteractionEnabled = FALSE;
+        masterViewController.navigationController.view.userInteractionEnabled = FALSE;
         UIView *superView = sourceViewController.view.superview;
         [superView addSubview:destinationViewController.view];
         [destinationViewController viewWillAppear:YES];
@@ -60,22 +60,8 @@
         [NSTimer scheduledTimerWithTimeInterval:outgoingAnimation.duration target:masterViewController selector:@selector(completionTimer:) userInfo:completionBlock repeats:NO];
     }];
 
-//    [(WCNavigationController*)self.navigationController setPopAnimatiobBlock:^(UIViewController *sourceViewController, UIViewController *destinationViewController, WCViewControllerAnimationCompletionBlock completionBlock){
-//        UIView *superView = sourceViewController.view.superview;
-//        [superView addSubview:destinationViewController.view];
-//        [destinationViewController.view setFrame:sourceViewController.view.frame];
-//        [destinationViewController.view setTransform:CGAffineTransformMakeTranslation(-self.view.frame.size.width, 0)];
-//        [UIView animateWithDuration:0.3 animations:^{
-//            [sourceViewController.view setTransform:CGAffineTransformMakeTranslation(self.view.frame.size.width, 0)];
-//            [destinationViewController.view setTransform:CGAffineTransformIdentity];
-//        } completion:^(BOOL finished){
-//            completionBlock(finished);
-//            [sourceViewController.view setTransform:CGAffineTransformIdentity];
-//        }];
-//    }];
-
     [(WCNavigationController*)self.navigationController setPopAnimatiobBlock:^(UIViewController *sourceViewController, UIViewController *destinationViewController, WCViewControllerAnimationCompletionBlock completionBlock){
-        self.navigationController.view.userInteractionEnabled = FALSE;
+        masterViewController.navigationController.view.userInteractionEnabled = FALSE;
         UIView *superView = sourceViewController.view.superview;
         [superView addSubview:destinationViewController.view];
         [destinationViewController.view setFrame:sourceViewController.view.frame];
