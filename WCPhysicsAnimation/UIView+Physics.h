@@ -20,6 +20,7 @@
 - (void)snapToAlternateFrame;
 
 - (void)snapToFrame:(CGRect)newFrame completion:(void (^)())completion;
+- (void)snapToFrame:(CGRect)newFrame withMass:(NSNumber*)mass stiffness:(NSNumber*)stiffness damping:(NSNumber*)damping completion:(void (^)())completion;
 - (void)snapToOriginalFrameWithCompletion:(void (^)())completion;
 - (void)snapToAlternateFrameWithCompletion:(void (^)())completion;
 

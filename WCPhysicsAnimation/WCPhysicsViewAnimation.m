@@ -17,6 +17,7 @@ static float defaultMass      = 0.5f;
 static int defaultStiffness   = 300;
 static int defaultDamping     = 16;
 
+
 @interface WCPhysicsViewAnimation ()
 
 @property (strong, nonatomic) WCPhysicsSimulation *simulation;

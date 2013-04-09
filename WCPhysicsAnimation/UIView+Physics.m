@@ -78,7 +78,15 @@ CGFloat DistanceBetweenTwoRects(CGRect firstRect, CGRect secondRect) {
 }
 
 - (void)snapToFrame:(CGRect)newFrame completion:(void (^)())completion {
-    CAAnimation *animation = [WCPhysicsViewAnimation animationFrom:self.frame to:newFrame];
+    [self snapToFrame:newFrame withMass:nil stiffness:nil damping:nil completion:completion];
+}
+
+- (void)snapToFrame:(CGRect)newFrame withMass:(NSNumber*)mass stiffness:(NSNumber*)stiffness damping:(NSNumber*)damping completion:(void (^)())completion {
+    WCPhysicsViewAnimation *animation = [WCPhysicsViewAnimation animationFrom:self.frame to:newFrame];
+    animation.mass = mass ?: animation.mass;
+    animation.stiffness = stiffness ?: animation.stiffness;
+    animation.damping = damping ?: animation.damping;
+    
     [self.layer addAnimation:animation forKey:@"physics"];
     self.frame = newFrame;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, animation.duration * NSEC_PER_SEC), dispatch_get_main_queue(), completion);

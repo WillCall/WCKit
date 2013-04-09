@@ -42,7 +42,7 @@ static int defaultDamping     = 16;
     self.stiffness = [NSNumber numberWithInt: defaultStiffness];
     self.damping = [NSNumber numberWithInt: defaultDamping];
 
-    self.keyPath = @"contentOffset";
+    self.keyPath = @"bounds";
     self.calculationMode = kCAAnimationDiscrete;
     self.removedOnCompletion = TRUE;
 }
@@ -52,8 +52,8 @@ static int defaultDamping     = 16;
         return _simulation;
     }
 
-    CGPoint origin = CGPointMake(CGRectGetMidX(self.fromValue), CGRectGetMidY(self.fromValue));
-    CGPoint destination = CGPointMake(CGRectGetMidX(self.toValue), CGRectGetMidY(self.toValue));
+    CGPoint origin = self.fromValue.origin;
+    CGPoint destination = self.toValue.origin;
 
 
     WCPhysicsSimulationBody *contentOffsetBody = [[WCPhysicsSimulationBody alloc] init];
@@ -69,11 +69,25 @@ static int defaultDamping     = 16;
 }
 
 - (NSTimeInterval)duration {
-    return self.simulation.duration;
+    return self.simulation.duration / self.speed;
 }
 
 - (NSArray*)values {
-    return [self.simulation.animationValues valueForKeyPath:@"@unionOfObjects.contentOffset"];
+    if (self.simulation.animationValues.count > 0) {
+        NSArray *points = [self.simulation.animationValues valueForKeyPath:@"@unionOfObjects.bounds"];
+        NSMutableArray *rects = [[NSMutableArray alloc] initWithCapacity:points.count + 2];
+        [rects addObject:[NSValue valueWithCGRect:self.fromValue]];
+        for (NSValue *value in points) {
+            CGPoint point = value.CGPointValue;
+            CGRect rect = self.fromValue;
+            rect.origin = point;
+            [rects addObject:[NSValue valueWithCGRect:rect]];
+        }
+        [rects addObject:[NSValue valueWithCGRect:self.toValue]];
+        return [NSArray arrayWithArray:rects];
+    } else {
+        return @[];
+    }
 }
 
 

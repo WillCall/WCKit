@@ -10,4 +10,7 @@
 
 @interface UIScrollView (Physics)
 
+- (void)snapToOffset:(CGPoint)offset;
+- (void)snapToOffset:(CGPoint)offset completion:(void (^)())completion;
+
 @end

@@ -103,7 +103,7 @@ const float sleepTimeThreshold = 0.1f;
     [self setAllBodiesToDestination];
     [animationValues addObject:[self currentFrameAnimationValue]];
     [self freeBodies];
-    _animationValues = [NSArray arrayWithArray:animationValues];
+    self.animationValues = [NSArray arrayWithArray:animationValues];
     return _animationValues;
 }
 
