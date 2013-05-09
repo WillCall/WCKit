@@ -11,6 +11,7 @@
 
 @interface UINavigationBar (PrivateStuff)
 - (void)pushNavigationItem:(UINavigationItem*)item;
+- (UINavigationItem*)popNavigationItem;
 @end
 
 @implementation WCNavigationBar
@@ -38,44 +39,26 @@
     }
 }
 
-
-- (UINavigationItem *)popNavigationItemAnimated:(BOOL)animated {
-    if (animated && self.items.count > 1) {
+- (UINavigationItem *)popNavigationItem {
+    if (self.popAnimationBlock) {
         UINavigationItem* destinationItem = [self.items objectAtIndex:self.items.count - 2];
-        if (self.popAnimationBlock) {
-            self.popAnimationBlock(self.topItem, destinationItem, ^(BOOL finished){
-                [super popNavigationItemAnimated:FALSE];
-            });
-        } else {
-            [super popNavigationItemAnimated:TRUE];
-        }
+        self.popAnimationBlock(self.topItem, destinationItem, ^(BOOL finished){
+            [super popNavigationItem];
+        });
         return destinationItem;
     } else {
-        return [super popNavigationItemAnimated:FALSE];
-    }
-}
-
-- (void)pushNavigationItem:(UINavigationItem *)item animated:(BOOL)animated {
-    if (animated) {
-        if (self.pushAnimationBlock) {
-            self.pushAnimationBlock(self.topItem, item, ^(BOOL finished){
-                @try {
-                    [super pushNavigationItem:item animated:FALSE];
-                }
-                @catch (NSException *exception) {
-                    NSLog(@"Got a %@ exception", [exception class]);
-                }
-            });
-        } else {
-            [super pushNavigationItem:item animated:TRUE];
-        }
-    } else {
-        [super pushNavigationItem:item animated:FALSE];
+        return [super popNavigationItem];
     }
 }
 
 - (void)pushNavigationItem:(UINavigationItem*)item {
-    [super pushNavigationItem:item];
+    if (self.pushAnimationBlock) {
+        self.pushAnimationBlock(self.topItem, item, ^(BOOL finished){
+            [super pushNavigationItem:item];
+        });
+    } else {
+        [super pushNavigationItem:item];
+    }
 }
 
 - (void)setItems:(NSArray *)items animated:(BOOL)animated {
