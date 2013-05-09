@@ -33,6 +33,7 @@
 		CE5115BF1602601900BD3A7A /* WCDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5115BE1602601900BD3A7A /* WCDetailViewController.m */; };
 		CE5115FF1602632A00BD3A7A /* libWCNavigationController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */; };
 		CE5116031602713800BD3A7A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5116021602713800BD3A7A /* QuartzCore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		CE575719173C326B00DACDCA /* WCLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE575718173C326B00DACDCA /* WCLabel.m */; };
 		CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */; };
 		CE77FEFE16792371002B4511 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE51156D16025FBE00BD3A7A /* Foundation.framework */; };
 		CE77FF0316792371002B4511 /* WCPhysicsViewAnimation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE77FF0216792371002B4511 /* WCPhysicsViewAnimation.h */; };
@@ -144,6 +145,8 @@
 		CE5115BD1602601900BD3A7A /* WCDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCDetailViewController.h; sourceTree = "<group>"; };
 		CE5115BE1602601900BD3A7A /* WCDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCDetailViewController.m; sourceTree = "<group>"; };
 		CE5116021602713800BD3A7A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		CE575717173C326B00DACDCA /* WCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCLabel.h; sourceTree = "<group>"; };
+		CE575718173C326B00DACDCA /* WCLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCLabel.m; sourceTree = "<group>"; };
 		CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Physics.h"; sourceTree = "<group>"; };
 		CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Physics.m"; sourceTree = "<group>"; };
 		CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWCPhysicsAnimation.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,10 +186,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE51157D16025FBE00BD3A7A /* SenTestingKit.framework in Frameworks */,
-				CE51157F16025FBE00BD3A7A /* UIKit.framework in Frameworks */,
 				CE51158016025FBE00BD3A7A /* Foundation.framework in Frameworks */,
 				CE51158316025FBE00BD3A7A /* libWCNavigationController.a in Frameworks */,
+				CE51157D16025FBE00BD3A7A /* SenTestingKit.framework in Frameworks */,
+				CE51157F16025FBE00BD3A7A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,13 +197,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE51159E1602601900BD3A7A /* CoreData.framework in Frameworks */,
+				CE51159C1602601900BD3A7A /* CoreGraphics.framework in Frameworks */,
+				CE51159A1602601900BD3A7A /* Foundation.framework in Frameworks */,
+				CE5115FF1602632A00BD3A7A /* libWCNavigationController.a in Frameworks */,
 				CE77FF4F1679510B002B4511 /* libWCPhysicsAnimation.a in Frameworks */,
 				CE5116031602713800BD3A7A /* QuartzCore.framework in Frameworks */,
-				CE5115FF1602632A00BD3A7A /* libWCNavigationController.a in Frameworks */,
 				CE5115991602601900BD3A7A /* UIKit.framework in Frameworks */,
-				CE51159A1602601900BD3A7A /* Foundation.framework in Frameworks */,
-				CE51159C1602601900BD3A7A /* CoreGraphics.framework in Frameworks */,
-				CE51159E1602601900BD3A7A /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,10 +219,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE77FF0C16792371002B4511 /* SenTestingKit.framework in Frameworks */,
-				CE77FF0D16792371002B4511 /* UIKit.framework in Frameworks */,
 				CE77FF0E16792371002B4511 /* Foundation.framework in Frameworks */,
 				CE77FF1116792371002B4511 /* libWCPhysicsAnimation.a in Frameworks */,
+				CE77FF0C16792371002B4511 /* SenTestingKit.framework in Frameworks */,
+				CE77FF0D16792371002B4511 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,13 +232,13 @@
 		CE51155C16025F8600BD3A7A = {
 			isa = PBXGroup;
 			children = (
-				CE51156F16025FBE00BD3A7A /* WCNavigationController */,
-				CE51158416025FBE00BD3A7A /* WCNavigationControllerTests */,
-				CE51159F1602601900BD3A7A /* WCNavigationControllerExample */,
-				CE77FEFF16792371002B4511 /* WCPhysicsAnimation */,
-				CE77FF1216792371002B4511 /* WCPhysicsAnimationTests */,
 				CE51156C16025FBE00BD3A7A /* Frameworks */,
 				CE51156B16025FBE00BD3A7A /* Products */,
+				CE51156F16025FBE00BD3A7A /* WCNavigationController */,
+				CE51159F1602601900BD3A7A /* WCNavigationControllerExample */,
+				CE51158416025FBE00BD3A7A /* WCNavigationControllerTests */,
+				CE77FEFF16792371002B4511 /* WCPhysicsAnimation */,
+				CE77FF1216792371002B4511 /* WCPhysicsAnimationTests */,
 				629EBBF184314CA08B5453F9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -244,9 +247,9 @@
 			isa = PBXGroup;
 			children = (
 				CE51156A16025FBE00BD3A7A /* libWCNavigationController.a */,
-				CE51157B16025FBE00BD3A7A /* WCNavigationControllerTests.octest */,
-				CE5115971602601900BD3A7A /* WCNavigationControllerExample.app */,
 				CE77FEFD16792371002B4511 /* libWCPhysicsAnimation.a */,
+				CE5115971602601900BD3A7A /* WCNavigationControllerExample.app */,
+				CE51157B16025FBE00BD3A7A /* WCNavigationControllerTests.octest */,
 				CE77FF0B16792371002B4511 /* WCPhysicsAnimationTests.octest */,
 			);
 			name = Products;
@@ -255,13 +258,13 @@
 		CE51156C16025FBE00BD3A7A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE5116021602713800BD3A7A /* QuartzCore.framework */,
+				CE51159D1602601900BD3A7A /* CoreData.framework */,
+				CE51159B1602601900BD3A7A /* CoreGraphics.framework */,
 				CE51156D16025FBE00BD3A7A /* Foundation.framework */,
+				F86C222780454B84A0E57A17 /* libPods.a */,
+				CE5116021602713800BD3A7A /* QuartzCore.framework */,
 				CE51157C16025FBE00BD3A7A /* SenTestingKit.framework */,
 				CE51157E16025FBE00BD3A7A /* UIKit.framework */,
-				CE51159B1602601900BD3A7A /* CoreGraphics.framework */,
-				CE51159D1602601900BD3A7A /* CoreData.framework */,
-				F86C222780454B84A0E57A17 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +273,8 @@
 			isa = PBXGroup;
 			children = (
 				CE51157016025FBE00BD3A7A /* Supporting Files */,
+				CE575717173C326B00DACDCA /* WCLabel.h */,
+				CE575718173C326B00DACDCA /* WCLabel.m */,
 				CEEB937C1603E4F800AFE51E /* WCNavigationBar.h */,
 				CEEB937D1603E4F800AFE51E /* WCNavigationBar.m */,
 				CE51157216025FBE00BD3A7A /* WCNavigationController.h */,
@@ -289,9 +294,9 @@
 		CE51158416025FBE00BD3A7A /* WCNavigationControllerTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE51158516025FBE00BD3A7A /* Supporting Files */,
 				CE51158A16025FBE00BD3A7A /* WCNavigationControllerTests.h */,
 				CE51158B16025FBE00BD3A7A /* WCNavigationControllerTests.m */,
-				CE51158516025FBE00BD3A7A /* Supporting Files */,
 			);
 			path = WCNavigationControllerTests;
 			sourceTree = "<group>";
@@ -299,8 +304,8 @@
 		CE51158516025FBE00BD3A7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE51158616025FBE00BD3A7A /* WCNavigationControllerTests-Info.plist */,
 				CE51158716025FBE00BD3A7A /* InfoPlist.strings */,
+				CE51158616025FBE00BD3A7A /* WCNavigationControllerTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -308,17 +313,17 @@
 		CE51159F1602601900BD3A7A /* WCNavigationControllerExample */ = {
 			isa = PBXGroup;
 			children = (
+				CE5115A01602601900BD3A7A /* Supporting Files */,
 				CE77FF4B16794E92002B4511 /* baby_elephant_ears.jpg */,
+				CE5115B41602601900BD3A7A /* MainStoryboard_iPad.storyboard */,
+				CE5115B11602601900BD3A7A /* MainStoryboard_iPhone.storyboard */,
 				CE5115A81602601900BD3A7A /* WCAppDelegate.h */,
 				CE5115A91602601900BD3A7A /* WCAppDelegate.m */,
-				CE5115B11602601900BD3A7A /* MainStoryboard_iPhone.storyboard */,
-				CE5115B41602601900BD3A7A /* MainStoryboard_iPad.storyboard */,
-				CE5115BA1602601900BD3A7A /* WCMasterViewController.h */,
-				CE5115BB1602601900BD3A7A /* WCMasterViewController.m */,
 				CE5115BD1602601900BD3A7A /* WCDetailViewController.h */,
 				CE5115BE1602601900BD3A7A /* WCDetailViewController.m */,
+				CE5115BA1602601900BD3A7A /* WCMasterViewController.h */,
+				CE5115BB1602601900BD3A7A /* WCMasterViewController.m */,
 				CE5115B71602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld */,
-				CE5115A01602601900BD3A7A /* Supporting Files */,
 			);
 			path = WCNavigationControllerExample;
 			sourceTree = "<group>";
@@ -326,13 +331,13 @@
 		CE5115A01602601900BD3A7A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE5115A11602601900BD3A7A /* WCNavigationControllerExample-Info.plist */,
-				CE5115A21602601900BD3A7A /* InfoPlist.strings */,
-				CE5115A51602601900BD3A7A /* main.m */,
-				CE5115A71602601900BD3A7A /* WCNavigationControllerExample-Prefix.pch */,
+				CE5115AF1602601900BD3A7A /* Default-568h@2x.png */,
 				CE5115AB1602601900BD3A7A /* Default.png */,
 				CE5115AD1602601900BD3A7A /* Default@2x.png */,
-				CE5115AF1602601900BD3A7A /* Default-568h@2x.png */,
+				CE5115A21602601900BD3A7A /* InfoPlist.strings */,
+				CE5115A51602601900BD3A7A /* main.m */,
+				CE5115A11602601900BD3A7A /* WCNavigationControllerExample-Info.plist */,
+				CE5115A71602601900BD3A7A /* WCNavigationControllerExample-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -341,6 +346,10 @@
 			isa = PBXGroup;
 			children = (
 				CE77FF0016792371002B4511 /* Supporting Files */,
+				CEA680911709F85500A91FCE /* UIScrollView+Physics.h */,
+				CEA680921709F85500A91FCE /* UIScrollView+Physics.m */,
+				CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */,
+				CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */,
 				CE77FF66167A570B002B4511 /* WCPhysicsSimulation.h */,
 				CE77FF67167A570B002B4511 /* WCPhysicsSimulation.m */,
 				CE77FF6B167A572A002B4511 /* WCPhysicsSimulationBody.h */,
@@ -349,10 +358,6 @@
 				CE77FF0416792371002B4511 /* WCPhysicsViewAnimation.m */,
 				CEE9B2BB17093131003C6C4D /* WCScrollViewPhysicsAnimation.h */,
 				CEE9B2BC17093131003C6C4D /* WCScrollViewPhysicsAnimation.m */,
-				CE6F85E5167BFF2900C52DA2 /* UIView+Physics.h */,
-				CE6F85E6167BFF2900C52DA2 /* UIView+Physics.m */,
-				CEA680911709F85500A91FCE /* UIScrollView+Physics.h */,
-				CEA680921709F85500A91FCE /* UIScrollView+Physics.m */,
 			);
 			path = WCPhysicsAnimation;
 			sourceTree = "<group>";
@@ -368,9 +373,9 @@
 		CE77FF1216792371002B4511 /* WCPhysicsAnimationTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE77FF1316792371002B4511 /* Supporting Files */,
 				CE77FF1816792371002B4511 /* WCPhysicsAnimationTests.h */,
 				CE77FF1916792371002B4511 /* WCPhysicsAnimationTests.m */,
-				CE77FF1316792371002B4511 /* Supporting Files */,
 			);
 			path = WCPhysicsAnimationTests;
 			sourceTree = "<group>";
@@ -378,8 +383,8 @@
 		CE77FF1316792371002B4511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE77FF1416792371002B4511 /* WCPhysicsAnimationTests-Info.plist */,
 				CE77FF1516792371002B4511 /* InfoPlist.strings */,
+				CE77FF1416792371002B4511 /* WCPhysicsAnimationTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -521,13 +526,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE5115A41602601900BD3A7A /* InfoPlist.strings in Resources */,
+				CE77FF4C16794E92002B4511 /* baby_elephant_ears.jpg in Resources */,
+				CE5115B01602601900BD3A7A /* Default-568h@2x.png in Resources */,
 				CE5115AC1602601900BD3A7A /* Default.png in Resources */,
 				CE5115AE1602601900BD3A7A /* Default@2x.png in Resources */,
-				CE5115B01602601900BD3A7A /* Default-568h@2x.png in Resources */,
-				CE5115B31602601900BD3A7A /* MainStoryboard_iPhone.storyboard in Resources */,
+				CE5115A41602601900BD3A7A /* InfoPlist.strings in Resources */,
 				CE5115B61602601900BD3A7A /* MainStoryboard_iPad.storyboard in Resources */,
-				CE77FF4C16794E92002B4511 /* baby_elephant_ears.jpg in Resources */,
+				CE5115B31602601900BD3A7A /* MainStoryboard_iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,8 +594,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE51157516025FBE00BD3A7A /* WCNavigationController.m in Sources */,
+				CE575719173C326B00DACDCA /* WCLabel.m in Sources */,
 				CEEB937E1603E4F800AFE51E /* WCNavigationBar.m in Sources */,
+				CE51157516025FBE00BD3A7A /* WCNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,8 +604,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE51158C16025FBE00BD3A7A /* WCNavigationControllerTests.m in Sources */,
 				CEEB937F1603E4F800AFE51E /* WCNavigationBar.m in Sources */,
+				CE51158C16025FBE00BD3A7A /* WCNavigationControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,9 +615,9 @@
 			files = (
 				CE5115A61602601900BD3A7A /* main.m in Sources */,
 				CE5115AA1602601900BD3A7A /* WCAppDelegate.m in Sources */,
-				CE5115B91602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld in Sources */,
-				CE5115BC1602601900BD3A7A /* WCMasterViewController.m in Sources */,
 				CE5115BF1602601900BD3A7A /* WCDetailViewController.m in Sources */,
+				CE5115BC1602601900BD3A7A /* WCMasterViewController.m in Sources */,
+				CE5115B91602601900BD3A7A /* WCNavigationControllerExample.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,12 +625,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE77FF0516792371002B4511 /* WCPhysicsViewAnimation.m in Sources */,
+				CEA680931709F85500A91FCE /* UIScrollView+Physics.m in Sources */,
+				CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */,
 				CE77FF68167A570B002B4511 /* WCPhysicsSimulation.m in Sources */,
 				CE77FF6D167A572A002B4511 /* WCPhysicsSimulationBody.m in Sources */,
-				CE6F85E7167BFF2900C52DA2 /* UIView+Physics.m in Sources */,
+				CE77FF0516792371002B4511 /* WCPhysicsViewAnimation.m in Sources */,
 				CEE9B2BD17093131003C6C4D /* WCScrollViewPhysicsAnimation.m in Sources */,
-				CEA680931709F85500A91FCE /* UIScrollView+Physics.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

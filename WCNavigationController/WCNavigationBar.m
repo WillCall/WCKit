@@ -16,29 +16,6 @@
 
 @implementation WCNavigationBar
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-- (id)init {
-    self = [super init];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
-- (void)drawRect:(CGRect)rect {
-    if (self.backgroundColor != [UIColor clearColor]) {
-        [super drawRect:rect];
-    }
-}
-
 - (UINavigationItem *)popNavigationItem {
     if (self.popAnimationBlock) {
         UINavigationItem* destinationItem = [self.items objectAtIndex:self.items.count - 2];
