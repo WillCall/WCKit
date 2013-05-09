@@ -18,14 +18,16 @@
 }
 
 - (NSAttributedString*)applyKerningToText:(NSString*)text {
-    NSAttributedString *string = [[NSAttributedString alloc] initWithString:text attributes:@{
-                                                        NSKernAttributeName: @(self.kerning.floatValue)
-                                  }];
+    NSString *newText = [NSString stringWithString:text];
+    NSDictionary *newAttributes = @{
+                                    NSKernAttributeName: @(self.kerning.floatValue ?: 0.0)
+                                    };
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:newText attributes:newAttributes];
     return string;
 }
 
 - (void)setText:(NSString *)text {
-    if ([self respondsToSelector:@selector(setAttributedText:)]) {
+    if (self.kerning && text && [self respondsToSelector:@selector(setAttributedText:)]) {
         NSAttributedString *string = [self applyKerningToText:text];
         [self setAttributedText:string];
     } else {
@@ -34,7 +36,7 @@
 }
 
 - (void)setKerning:(NSString *)kerning {
-    _kerning = kerning;
+    _kerning = [kerning copy];
     [self applyKerningToExistingText];
 }
 
