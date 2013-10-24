@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSString *kerning;
 
+- (NSAttributedString*)applyKerningToText:(NSString*)text;
+
 @end

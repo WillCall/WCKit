@@ -20,6 +20,7 @@
 - (NSAttributedString*)applyKerningToText:(NSString*)text {
     NSString *newText = [NSString stringWithString:text];
     NSDictionary *newAttributes = @{
+                                    NSFontAttributeName: self.font,
                                     NSKernAttributeName: @(self.kerning.floatValue ?: 0.0)
                                     };
     NSAttributedString *string = [[NSAttributedString alloc] initWithString:newText attributes:newAttributes];
@@ -38,6 +39,14 @@
 - (void)setKerning:(NSString *)kerning {
     _kerning = [kerning copy];
     [self applyKerningToExistingText];
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.font = [UIFont fontWithName:self.font.fontName size:self.font.pointSize];
+    }
+    return self;
 }
 
 @end
